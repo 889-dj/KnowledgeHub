@@ -1,1 +1,3 @@
-
+# RoadMap
+## Basics
+- Datatypes
