@@ -25,6 +25,6 @@
 
 
 ## Resources
-- https://www.w3school.com/css/
-
+- https://www.w3schools.com/css/default.asp
+(Best resource for short and precise TopicWise explanation.)
 
