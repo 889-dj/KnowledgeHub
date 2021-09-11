@@ -4,5 +4,4 @@
 - EventLoops
 - Objects
 
-## DOM manipulation
-#### selecting elements 
+
