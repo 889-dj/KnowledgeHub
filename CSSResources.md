@@ -28,5 +28,5 @@
 - https://www.w3schools.com/css/default.asp
 (Best resource for short and precise TopicWise explanation.)
 - https://developer.mozilla.org/en-US/docs/Web/CSS
-(Diving deep into a topic)
+(Diving deep into a particular concept)
 
