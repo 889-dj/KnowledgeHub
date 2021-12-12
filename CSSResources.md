@@ -29,4 +29,6 @@
 (Best resource for short and precise TopicWise explanation.)
 - https://developer.mozilla.org/en-US/docs/Web/CSS
 (Diving deep into a particular concept)
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+( Well to learn a concept nothing helps more than trying that thing out a quick reference for hands-on and revision)
 
