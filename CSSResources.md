@@ -19,7 +19,7 @@
 - Media Queries
 ### Advance
 - Variables
-- Tramsitions & Animations
+- Transitions & Animations
 - 2D and 3D Transforms
 - Shadows and Gradients
 
