@@ -1,7 +1,6 @@
 # RoadMap
 ## Basics
 - Datatypes
-- EventLoops
 - Objects
 
 RESOURCES:<br>
