@@ -1,2 +1,3 @@
 ## Resources to learn
-- https://git-school.github.io/visualizing-git/ [learn git visually] 
+- [gitBook (best)](https://git-scm.com/book/en/v2)
+- [learn git visually](https://git-school.github.io/visualizing-git/) 
