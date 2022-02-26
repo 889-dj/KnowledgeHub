@@ -2,4 +2,5 @@
 ## RoadMap
 - HTML tree structure
 - Accessing elemnents
-- to be comtinued
+- insertion/removal of elements 
+- difference b/w nodeList and HTMLCollection
