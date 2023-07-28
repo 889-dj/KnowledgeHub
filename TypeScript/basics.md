@@ -3,33 +3,37 @@ Typescript
 Note - whenever declaring other types of interface etc we start our varName using capital letter
 
 
-1) Variables in TS
-- Javascript var declaration=> let varname = value 
-- Typescript var declaration=> let varname: type = value 
+### 1) Variables in TS
+- Javascript ```var declaration=> let varname = value``` 
+- Typescript ```var declaration=> let varname: type = value``` 
 - Primitive types => number , Boolean , string 
 - Any(type) keyword  => use when don't knw the type of var or I don't wanna do type checking 
 - Typescript automatically infer the type of a variable on initialisation by default it's any (not gud in practice)
 
-2) Functions in TS
-- function funcName( var : type): type {......}
-- Const arrfunc = (varname : type) : type => {.......} 
+### 2) Functions in TS
+- ```function funcName( var : type): type {......}```
+- ```Const arrfunc = (varname : type) : type => {.......}``` 
 - Type checking is shown/visible one item at a time 
 
-3) Objects in TS
+### 3) Objects in TS
 - Passing & returning objects in functions 
-  - function funcName({...}) : {...obj} {.............}
+```function funcName({...}) : {...obj} {.............}```
 
 - odd behaviour of objects in typescript
-Eg : createUser( {name: string , isPaid: boolean} )
-Not accepted :-
-      createUser ( {name:"dj" , isPaid:false , email:"h@h.com"} )  [passing extra prop to the object directly to function will give error]
-Accepted :-
-     Let newUser = {name:"dj" , isPaid:false ,    email:"h@h.com"}
-createUser( newUser )  [ declaring objects outside func and then passing it will not give error ]
+Eg :
+```
+createUser( {name: string , isPaid: boolean} )
 
-4) Type Aliases in TS
+//Not accepted :-
+createUser ( {name:"dj" , isPaid:false , email:"h@h.com"} )  [passing extra prop to the object directly to function will give error]
+
+//Accepted :-
+let newUser = {name:"dj" , isPaid:false ,    email:"h@h.com"}
+createUser( newUser )  [ declaring objects outside func and then passing it will not give error ]
+```
+### 4) Type Aliases in TS
 - Using the 'type' keyword we can make aliases 
-Type mytype = object / type 
+```Type mytype = object / type``` 
 
 - Never is used when we need to handle errors (refer docs for further explanation)[ never is something which is never supposed to execute or end the things ]
 
@@ -39,58 +43,71 @@ Type mytype = object / type
 Eg : type cardDate = {cardDate: string} , type win = {win: Boolean}
 (Creating new type) -> type cardDetails =  cardDate & win and {CVV: number}
 
-5) Arrays in TS
-- Const arrName : type[] = []
-- Const arrName : Array<type> = []
+### 5) Arrays in TS
+- ```Const arrName : type[] = []```
+- ```Const arrName : Array<type> = []```
 - We can also build a array of custom type using alias 
 - creating array of arrays in TS 
-   Const arrName : type[][] = []
+```Const arrName : type[][] = []```
 
-6)  Union type in TS ( | )
+### 6)  Union type in TS ( | )
 *Instead of any try to use union 
 - Union is a combination >=2 types that u can include in variable, array , etc.
 - let varName : number | string | Boolean | customType(using type )
 - when using union types it creates a new type that can be either type1 or type2 n so on so we need to check the type in our functions or loops or whatever
 - Arrays with union types 
-   Const varName : (type1 | type2)[] = []
-Another usecase : eg-
+```Const varName : (type1 | type2)[] = []```
+- Another usecase : eg-
+```
 Let Seatallotment : "aisle" | "middle" | "window"
 Seatallotment = "aisle"    ✅
 Seatallotment = "crew"    ❎
-Only the types/value that are provided are allowed 
-
-7) Tuples in TS
-- Special kind of array with some restriction on it 
-- Const tuple : [type1 , type2 ,type3]
-   tuple = [valtype1 , valtype2 , valtype3] ✅
-- The order of types in declaration and values must be same ( [valtype2 , valtype1 , valtype3] ❎
+// Only the types/value that are provided are allowed
+```
+### 7) Tuples in TS
+- Special kind of array with some restriction on it
+```
+  const tuple : [type1 , type2 ,type3] {\n}
+  tuple = [valtype1 , valtype2 , valtype3] ✅
+  ```
+- The order of types in declaration and values must be same ```( [valtype2 , valtype1 , valtype3] ❎```
 - tuple make sure not just what's inside array but the order also matters
-- eg: rgb : [number , number , number ] = [255,255,255]
+- eg: ```rgb : [number , number , number ] = [255,255,255]```
 - We can make custom tuple types 
-Eg : type User = [number ,string ]
+- Eg :
+ ```
+type User = [number ,string ]
 Const newUser = [112,"dj"]
+```
 - We can push more elements at the back of it that's a weird behaviour read about it online 
 
-8) Enums is TS
-- enum seatchoice = {
-AISLE=10 , MIDDLE ,WINDOW , FOURTH 
+### 8) Enums is TS
+```
+enum seatchoice = {
+AISLE=10 ,
+MIDDLE , // 11
+WINDOW , // 12
+FOURTH   // 13
 }
+```
 - by default the value of first member of enum is 0 and then increasing order but we can provide Any type (string number etc) to any of the members 
 - It is used to limit our choices we can access it like :
-Const seat = seatchoice.AISLE ( AFTER . WE WILL BE SHOWN ONLY THE OPTION IN OUR ENUM)
-- using Enums create a lot of js code to avoid that we can use comst -> const enum varName = {....}
+```Const seat = seatchoice.AISLE ( AFTER . WE WILL BE SHOWN ONLY THE OPTION IN OUR ENUM)```
+- using Enums create a lot of js code to avoid that we can use comst -> ```const enum varName = {....}```
 
-9) Interfaces in TS (interface keyword)
+### 9) Interfaces in TS (interface keyword)
 - Much similar to types or a loose form of class as it allows u to have methods
 - what makes interfaces interesting is the def of functions 
-- interface user {
+```
+interface user {
    email : string 
    Userid : number 
    Starttrial : () => string(type) // method1  of defining    func in interfaces 
     GetCoupon() : number // method2 of defining func in interfaces
 }
+```
 
-10) Advantages of interface 
+### 10) Advantages of interface 
 - We can extend our interface that is we can add more properties to it without touching the actual interface we need to just add a property using the above syntax ( and this is called reopening of interface.
 interface user { GitHubtoken : string } //this is added to the above original Interface
 - interface also give us the advantage of inheritance
@@ -100,13 +117,14 @@ Interface admin extends user {} // using extends keyword (see the docs and Googl
 See the difference between type aliases and interface from the documentation
 
 
-11) How to setup Typescript for real world project 
+### 11) How to setup Typescript for real world project 
 - tsc --init  >  it creates a simple typescript config file 
 - U can see all the options either from the documentation or it is commented in the tsconfig.json file 
 
-12) classes in TS
+### 12) classes in TS
 - To use the variable inside the constructor we need to declare them outside the constructor 
-- Declare every variable before using 
+- Declare every variable before using
+```
 Class user {
     email : string 
     name: string
@@ -117,40 +135,42 @@ Class user {
 }
 Const newuser = new  user('h@h
 Com' , 'dj')
-
-- Typescript way of declaring class 
+```
+- Typescript way of declaring class
+```
 Class user{
       SomeVar: type = val
     Constructor(public email:string , public name: string, private userid: string) {.........}
 }
+```
 
-12) why interface are imp 
+### 12) why interface are imp 
 Interface takephoto{.......}
 Class cameraapp implements takephoto {........}
 
-13)  Abstract classes in TS
+### 13)  Abstract classes in TS
 - Abstract classes are like interfaces we can make a class abstract using 'abstract' keyword
 - Abstract classes cannot create obj of their own 
 - They help to define the class who are inheriting them 
 
-14) Generics 
+### 14) Generics 
 - function  genericFunc<Type>(val: Type): Type{........}
 - function  genericFunc<T>(val: T[]): T{........}
 - const funcName =  <T>(val: T): T => {........}
 - We can use our own made types/interface in the generics 
 - in the above syntax we can put coma this is to distinguish between generic and others  ->  <T,>
 
-15) generic classes 
+### 15) generic classes 
 16) in operator and type narrowing in TS
 Read about them from the documentation/online 
 * Is as in operators in TS 
 
-17)  Instanceof and Type predicates 
+### 17)  Instanceof and Type predicates 
 - Typeof check for the default types 
 - Anything that can be constructed with new keyword that's where Instanceof comes into the picture 
 - Instanceof checks whether a object is a instance of a class 
 
-18) Discriminated union and the exhaustiveness checking with never (part of narrowing )
+### 18) Discriminated union and the exhaustiveness checking with never (part of narrowing )
 - The process of refining types to more specific types than declared is called narrowing 
 - eg: in case of union types we need to check for the specific type to perform a operation on particular type [ var something : (string | number ) then to perform a operation specifically for number of for string we need to check for whether it's a number or a string & this is called type guard 
 
