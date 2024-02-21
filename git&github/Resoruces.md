@@ -107,7 +107,14 @@ Some good resources to Learn Git faster ☺️
 - [gitBook (best)](https://git-scm.com/book/en/v2)
 - [learn git visually](https://git-school.github.io/visualizing-git/) 
 
-Feel free to add anything I missed 😊🌱
+
+
+
+### Profile Readme generators
+- [profile readme generator](https://profile-readme-generator.com/)
+- [GRPM](https://gprm.itsvg.in/)
+- [github readme generator](https://readme.shaankhan.dev/)
+<br>Feel free to add anything I missed 😊🌱
 
 
 
