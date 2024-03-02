@@ -86,6 +86,35 @@ these allow for more complex and expressive type systems. Some of the most commo
 - Mapped Types
 - Type Guards
 ### TS modules
+In TypeScript, modules are used to organize and reuse code. There are two types of modules in TypeScript:
+
+- Internal
+>Internal modules are used to organize code within a file and are also referred to as namespaces. They are defined using the “namespace” keyword.
+- External
+> External modules are used to organize code across multiple files. They are defined using the “export” keyword in one file and the “import” keyword in another file. External modules in TypeScript follow the CommonJS or ES modules standards.
+
+
+
+<hr/>
+
+#### useful packages.
+- zod: A TypeScript-first data validation library
+- ts-morph: A TypeScript-first API for manipulating TypeScript code
+- ts-node: A TypeScript execution and REPL for node.js
+- ts-jest: A Jest transformer with source map support that lets you use Jest to test projects written in TypeScript.
+- typesync: Install missing TypeScript typings for dependencies in your package.json.
+- tsd - TypeScript Definition Manager
+- type-fest - A collection of essential TypeScript types
+
+#### build tools
+- webpack - static module bundeler
+- vite 
+- parcel - 0 config build tool
+- esbuild - fastest js bundler & minifier
+- swc - super-fast compiler written in Rust
+- tsup - zero-config TypeScript build tool
+- Rollup - module bundler for JavaScript
+- tsdx -zero-config CLI for TypeScript package development
 
 
 
