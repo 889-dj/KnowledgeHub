@@ -53,11 +53,38 @@ a way to narrow down the type of a variable. This is useful when you want to do 
 - instanceof
 - to be continued...
 ### Interfaces
+
 ### classes
 ### Generics
 ### Decorators
 ### utility types 
+- Partial: makes all properties of a type optional.
+  - `varName:partial<someType>`
+- Readonly: makes all properties of a type read-only.
+  - `const todo: Readonly<Todo> = {
+  title: 'Delete inactive users',
+};
+`
+- Pick: allows you to pick specific properties from a type.
+- Omit: allows you to omit specific properties from a type.
+- Exclude: creates a type that is the set difference of A and B.
+- Record
+- Extract
+- NonNullable
+- Parameters
+- ReturnType
+- InstanceType
+- Awaited
 ### Advanced types
+these allow for more complex and expressive type systems. Some of the most commonly used advanced types in TypeScript include:
+
+- Intersection Types
+- Union Types
+- Type Aliases
+- Conditional Types
+- Index Types
+- Mapped Types
+- Type Guards
 ### TS modules
 
 
