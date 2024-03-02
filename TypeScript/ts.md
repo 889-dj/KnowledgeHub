@@ -35,7 +35,8 @@ TypeScript has several built-in types, including:
 2. TypeScript uses structural typing to determine  <strong style="color:red;">type compatibility</strong>. This means that two types are considered compatible if they have the same structure, regardless of their names.
 <br>
 
-Assertions (used only when we do not explicitly declare the type of our variable ecept for type annotations)
+### Assertions 
+NOTE : (used only when we do not explicitly declare the type of our variable ecept for type annotations)
 - Type assertions in TypeScript are a way to tell the compiler to treat a value as a specific type, regardless of its inferred type.
 - In TypeScript, the as keyword is used for type assertions, allowing you to explicitly inform the compiler about the type of a value when it cannot be inferred automatically
 - `as const`,`as any`,`as [type] (type assertions)`,`! (non null assertion) - infers that the vale will not be null/undefined`
@@ -44,12 +45,21 @@ Assertions (used only when we do not explicitly declare the type of our variable
 The “angle-bracket” syntax: <T>value
 The “as” syntax: value as T
 ```
-
-Type Guards/Narrowing
+#### Satisfies keyword
+[read about it](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html#the-satisfies-operator)
+### Type Guards/Narrowing
 a way to narrow down the type of a variable. This is useful when you want to do something different depending on the type of a variable.
 - typeof
 - instanceof
-- 
+- to be continued...
+### Interfaces
+### classes
+### Generics
+### Decorators
+### utility types 
+### Advanced types
+### TS modules
+
 
 
 
