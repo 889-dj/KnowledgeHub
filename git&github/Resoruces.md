@@ -97,12 +97,12 @@ Git is only this much👇😊
 
 Some good resources to Learn Git faster ☺️
 
-1.[Git Official Documentation](git-scm.com/doc)
-2.[GitHub Learning Lab](udacity.com/course/version…)
-3.[Codecademy Course](codecademy.com/learn/learn-git)
-4. [Pro Git: by Scott Chacon [Book]](git-scm.com/book/en/v2)
-5. [Github Workflows](https://ooloo.io/project/github-flow/git-workflows)
-6. YouTube
+1. [Git Official Documentation](git-scm.com/doc)
+1. [GitHub Learning Lab](udacity.com/course/version…)
+1. [Codecademy Course](codecademy.com/learn/learn-git)
+1. [Pro Git: by Scott Chacon (Book)](git-scm.com/book/en/v2)
+1. [Github Workflows](https://ooloo.io/project/github-flow/git-workflows)
+1. YouTube
 - [FreeCodeCampOrg- beginer](rb.gy/ljxt5s)
 - [FreeCodeCampOrg- Intermediate](rb.gy/1x6mc)
 - [gitBook (best)](https://git-scm.com/book/en/v2)
