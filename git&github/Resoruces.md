@@ -101,7 +101,8 @@ Some good resources to Learn Git faster ☺️
 2.[GitHub Learning Lab](udacity.com/course/version…)
 3.[Codecademy Course](codecademy.com/learn/learn-git)
 4. [Pro Git: by Scott Chacon [Book]](git-scm.com/book/en/v2)
-5. YouTube
+5. [Github Workflows](https://ooloo.io/project/github-flow/git-workflows)
+6. YouTube
 - [FreeCodeCampOrg- beginer](rb.gy/ljxt5s)
 - [FreeCodeCampOrg- Intermediate](rb.gy/1x6mc)
 - [gitBook (best)](https://git-scm.com/book/en/v2)
