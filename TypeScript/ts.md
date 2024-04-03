@@ -40,7 +40,7 @@ NOTE : (used only when we do not explicitly declare the type of our variable ece
 - Type assertions in TypeScript are a way to tell the compiler to treat a value as a specific type, regardless of its inferred type.
 - In TypeScript, the as keyword is used for type assertions, allowing you to explicitly inform the compiler about the type of a value when it cannot be inferred automatically
 - `as const`,`as any`,`as [type] (type assertions)`,`! (non null assertion) - infers that the vale will not be null/undefined`
-<br/>There are two syntaxes for type assertions in TypeScript:
+<br/>There are two syntaxes for type assertions/ type casting in TypeScript:
 ```
 The “angle-bracket” syntax: <T>value
 The “as” syntax: value as T
@@ -51,13 +51,18 @@ The “as” syntax: value as T
 a way to narrow down the type of a variable. This is useful when you want to do something different depending on the type of a variable.
 - typeof
 - instanceof
-- to be continued...
+- in
+- discriminated union is when we have one property in common in union of diff types/interfaces
 ### Interfaces
 
 ### classes
+
 ### Generics
+
 ### Decorators
+
 ### utility types 
+
 - Partial: makes all properties of a type optional.
   - `varName:partial<someType>`
 - Readonly: makes all properties of a type read-only.
