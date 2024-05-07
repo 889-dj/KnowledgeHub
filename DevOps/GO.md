@@ -1,0 +1,2 @@
+- https://go.dev/tour/
+- https://www.boot.dev/lessons/7256e43f-aea0-47bb-9671-9c55ebca7095
