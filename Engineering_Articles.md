@@ -1,2 +1,3 @@
 - https://pablo-iorio.medium.com/best-software-engineering-architecture-articles-of-the-last-decade-2010-2019-6c8326a56722
 - https://github.com/sirius248/top-software-engineering-articles
+- https://blog.pragmaticengineer.com/
